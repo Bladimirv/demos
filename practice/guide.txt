@@ -1,0 +1,9 @@
+cdk init app --language typescript 
+
+aws sts get-caller-identity --query "Account" --output text
+
+--836498820175
+
+cdk bootstrap aws://836498820175/us-east-1
+
+npm run build
